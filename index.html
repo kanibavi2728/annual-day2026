@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Mom Academy | Day Care & Play School | Annual Day 2026</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Inter + Playfair Display -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fefaf5;
+            color: #2c241e;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f5e6da;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e67e22;
+            border-radius: 10px;
+        }
+
+        /* header */
+        .main-header {
+            background: rgba(255, 248, 240, 0.97);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ffdec2;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 12px 0;
+        }
+
+        .logo-area img {
+            height: 72px;
+            width: auto;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08));
+        }
+
+        .logo-area img:hover {
+            transform: scale(1.02);
+        }
+
+        .nav-links ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links li {
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            color: #4e3627;
+            transition: 0.25s;
+            position: relative;
+        }
+
+        .nav-links li:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 2.5px;
+            background: #e67e22;
+            transition: width 0.25s;
+            border-radius: 4px;
+        }
+
+        .nav-links li:hover:after {
+            width: 100%;
+        }
+
+        .nav-links li:hover {
+            color: #e67e22;
+        }
+
+        @media (max-width: 950px) {
+            .nav-links ul {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 780px) {
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .nav-links ul {
+                justify-content: center;
+                gap: 18px;
+            }
+        }
+
+        /* hero */
+        .hero-banner {
+            background: linear-gradient(125deg, #fff1e4 0%, #ffe2cf 100%);
+            border-radius: 0 0 60px 60px;
+            padding: 48px 0 70px;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-content {
+            flex: 1.2;
+        }
+
+        .hero-photo {
+            flex: 1;
+            background: linear-gradient(145deg, #fee9dd, #fff1e6);
+            border-radius: 48px;
+            box-shadow: 0 30px 40px -18px rgba(0, 0, 0, 0.2);
+            min-height: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(230, 126, 34, 0.2);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hero-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .hero-photo:hover img {
+            transform: scale(1.02);
+        }
+
+        .school-name {
+            font-size: 1rem;
+            color: #c1612e;
+            letter-spacing: 4px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.15;
+        }
+
+        .annual-badge {
+            display: inline-flex;
+            background: #e67e22;
+            color: white;
+            padding: 8px 26px;
+            border-radius: 60px;
+            font-weight: 700;
+            margin: 24px 0 18px;
+            gap: 12px;
+            box-shadow: 0 6px 14px rgba(230, 126, 34, 0.3);
+        }
+
+        .event-details {
+            background: rgba(255, 255, 245, 0.85);
+            backdrop-filter: blur(4px);
+            border-radius: 28px;
+            padding: 18px 24px;
+            border-left: 6px solid #e67e22;
+        }
+
+        .btn {
+            background: #e67e22;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            color: white;
+            margin-top: 28px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.25s;
+            cursor: pointer;
+            box-shadow: 0 8px 18px rgba(230, 126, 34, 0.3);
+        }
+
+        .btn:hover {
+            background: #c55f12;
+            transform: translateY(-3px);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-bottom: 48px;
+            color: #2c241e;
+            position: relative;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, #e67e22, #f3b27a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .section-title:after {
+            content: '';
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(90deg, #e67e22, #f7c49a);
+            display: block;
+            margin: 18px auto 0;
+            border-radius: 4px;
+        }
+
+        /* GLOBAL GALLERY CARD STYLES */
+        .photo-gallery-4col,
+        .photo-gallery-3col,
+        .photo-gallery-2col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .gallery-card {
+            background: white;
+            border-radius: 32px;
+            overflow: hidden;
+            transition: all 0.35s ease;
+            box-shadow: 0 18px 28px -12px rgba(0, 0, 0, 0.08);
+            flex: 1;
+            min-width: 220px;
+            border: 1px solid #f5e0d0;
+            cursor: pointer;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 28px 36px -14px rgba(0, 0, 0, 0.18);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 220px;
+            background: #f8e4d6;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .gallery-card:hover .gallery-img img {
+            transform: scale(1.05);
+        }
+
+        .gallery-card p {
+            padding: 16px;
+            font-weight: 600;
+            text-align: center;
+            color: #5e3e2c;
+            background: white;
+        }
+
+        /* photo placeholder hint (overlay style) */
+        .photo-hint {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            color: #ffefd6;
+            font-size: 11px;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            pointer-events: none;
+            font-family: monospace;
+            z-index: 2;
+        }
+
+        .photo-hint i {
+            margin-right: 6px;
+            font-size: 10px;
+        }
+
+        .guest-section {
+            background: linear-gradient(120deg, #fff9f3, #fff3e9);
+            padding: 70px 0;
+            border-radius: 70px;
+            margin: 60px 0;
+        }
+
+        .guest-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+
+        .guest-card {
+            background: white;
+            border-radius: 48px;
+            padding: 32px;
+            text-align: center;
+            width: 320px;
+            box-shadow: 0 28px 40px -18px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .guest-img-placeholder {
+            width: 140px;
+            height: 140px;
+            background: #f2e0d2;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 4px solid #f7cfa8;
+            position: relative;
+        }
+
+        .guest-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .franchise-strip {
+            background: linear-gradient(115deg, #2c241e, #3a2c23);
+            border-radius: 48px;
+            padding: 36px 32px;
+            margin: 50px auto;
+            color: #fff1e2;
+        }
+
+        .franchise-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .miracle h3 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #ffcd94, #ffb05a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .main-footer {
+            background: #1f1915;
+            color: #f6eadf;
+            padding: 58px 0 32px;
+            border-radius: 48px 48px 0 0;
+            margin-top: 80px;
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+            justify-content: space-between;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #f3b27a;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 24px;
+            font-size: 1.8rem;
+        }
+
+        .social-icons i {
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .social-icons i:hover {
+            color: #e67e22;
+            transform: translateY(-4px);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 24px;
+            border-top: 1px solid #3d2c22;
+        }
+
+        .photo-note {
+            text-align: center;
+            margin: 8px 0 20px;
+            font-size: 13px;
+            background: #fff0e3;
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 60px;
+            color: #b1551c;
+            font-weight: 500;
+        }
+
+        .photo-note i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 800px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* floating hint */
+        .floating-hint {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #e67e22dd;
+            backdrop-filter: blur(12px);
+            color: white;
+            border-radius: 60px;
+            padding: 8px 22px;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 999;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            font-family: monospace;
+        }
+
+        .hero-hint {
+            position: absolute;
+            bottom: 12px;
+            left: 16px;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(6px);
+            border-radius: 30px;
+            padding: 6px 14px;
+            font-size: 11px;
+            color: #ffefcf;
+            font-weight: 500;
+        }
+
+        .year-chip {
+            background: white;
+            padding: 8px 24px;
+            border-radius: 40px;
+            font-weight: 700;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            transition: 0.2s;
+        }
+
+        .year-chip:hover {
+            background: #e67e22;
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container nav-wrapper">
+            <div class="logo-area">
+                <img src="media/mom.png" alt="Mom Academy Logo"
+                    onerror="this.src='https://placehold.co/400x120?text=Mom+Academy+Logo+📍'">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <li>CURRICULUM</li>
+                    <li>FRANCHISE WITH US</li>
+                    <li>MOM DAYCARE</li>
+                    <li>ADMISSION</li>
+                    <li>CONTACT US</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner with 2026 Theme -->
+        <div class="hero-banner" data-aos="fade-up">
+            <div class="container hero-grid">
+                <div class="hero-content" data-aos="fade-right">
+                    <div class="school-name"><i class="fas fa-seedling"></i> MOM ACADEMY | DAY CARE & PLAY SCHOOL</div>
+                    <h1>3th Annual Day <span style="color:#e67e22;">2026</span></h1>
+                    <div class="annual-badge"><i class="fas fa-calendar-alt"></i> Celebrating Milestones & Shining
+                        Future</div>
+                    <p style="font-size:1.1rem; margin: 16px 0;">15 years of nurturing excellence | Bigger, Brighter,
+                        Bolder!</p>
+                    <div class="event-details">
+                        <p><i class="fas fa-map-pin"></i> <strong>Venue:</strong> Bharath Group Grand Auditorium,
+                            Thanjavur</p>
+                        <p><i class="fas fa-clock"></i> <strong>Time:</strong> 5:00 PM onwards | <strong>Date:</strong>
+                            26th April 2026</p>
+                    </div>
+                    <a href="#" class="btn"><i class="fas fa-ticket-alt"></i> Reserve Your Seat</a>
+                </div>
+                <div class="hero-photo" data-aos="fade-left">
+                    <img src="media/banner-stage-view.JPG" alt="Annual Day main stage 2026"
+                        onerror="this.src='https://placehold.co/700x450?text=📸+HERO+PHOTO+AREA+2026'">
+                    <div class="hero-hint"><i class="fas fa-camera"></i> 📌 Place Main Stage Photo: media/banner stage
+                        view.JPG (2026 celebration)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Journey & Glory years (2026 update) -->
+        <div class="container journey-section" data-aos="fade-up">
+            <div class="section-title">Our <span>Glorious Journey</span> to 2026</div>
+            <div class="years-grid"
+                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 30px 0;">
+                <span class="year-chip">2015</span><span class="year-chip">2016</span><span
+                    class="year-chip">2017</span>
+                <span class="year-chip">2018</span><span class="year-chip">2019</span><span
+                    class="year-chip">2020</span>
+                <span class="year-chip">2021</span><span class="year-chip">2022</span><span
+                    class="year-chip">2023</span>
+                <span class="year-chip">2024</span><span class="year-chip">2025</span><span class="year-chip"
+                    style="background:#e67e22; color:white;">2026</span>
+            </div>
+            <p style="text-align: center; color:#b46535; font-weight:500;">✨ 13 years of excellence | 5th Annual Day
+                2026 — Grand Celebration ✨</p>
+
+            <!-- ROW 1: Historical annual days with hints -->
+            <div class="photo-gallery-3col">
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/jkg.png" alt="Annual Day 2019"
+                            onerror="this.src='https://placehold.co/500x300?text=📷+Annual+Day+2019'">
+                        <div class="photo-hint"><i class="fas fa-image"></i> media/DSC_7465.JPG</div>
+                    </div>
+                    <p>🎭 Annual Day 2019</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/jkg1.JPG" alt="Annual Day 2022"
+                            onerror="this.src='https://placehold.co/500x300?text=📷+Annual+Day+2022'">
+                        <div class="photo-hint"><i class="fas fa-image"></i> media/DSC_7466.JPG</div>
+                    </div>
+                    <p>🎉 Annual Day 2022</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/jkg2.JPG" alt="Past Celebration"
+                            onerror="this.src='https://placehold.co/500x300?text=📷+Annual+Day+2024'">
+                        <div class="photo-hint"><i class="fas fa-image"></i> media/extra_memory.jpg</div>
+                    </div>
+                    <p>🌟 Annual Day 2024</p>
+                </div>
+            </div>
+            <div class="photo-note" style="display:block; text-align:center;"><i class="fas fa-info-circle"></i> 📍 3
+                photo spots above: replace images in /media/ folder (DSC_7465.JPG, DSC_7466.JPG, extra_memory.jpg)</div>
+        </div>
+
+        <!-- 4-COLUMN gallery: kids in action 2026 edition -->
+        <div class="container" data-aos="fade-up">
+            <div class="section-title"> <span>KINGDOM OF WORLD RECORD 2026
+                    <br>
+                    Mom and Me (stall world record )
+                    <br>
+                    ECA World Record
+
+                </span></div>
+            <div class="photo-gallery-4col">
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/stall.JPG" alt="Kids Dance"
+                            onerror="this.src='https://placehold.co/400x250?text=💃+Kids+Dance+2026'">
+                        <div class="photo-hint">📁 kids_activity1.jpg</div>
+                    </div>
+                    <p>🎵 WORLD RECORD</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/stall1.JPG" alt="Fancy Dress"
+                            onerror="this.src='https://placehold.co/400x250?text=🦋+Fancy+Dress'">
+                        <div class="photo-hint">📁 kids_activity2.jpg</div>
+                    </div>
+                    <p>🎭 </p> MOM AND ME STALL
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/stall2.JPG" alt="Yoga & Sports"
+                            onerror="this.src='https://placehold.co/400x250?text=🧘+Yoga+Day'">
+                        <div class="photo-hint">📁 kids_activity3.jpg</div>
+                    </div>
+                    <p>🧘‍♀️ Wellness Activity</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/stall3.JPG" alt="Art & Craft"
+                            onerror="this.src='https://placehold.co/400x250?text=🎨+Art+Corner'">
+                        <div class="photo-hint">📁 kids_activity4.jpg</div>
+                    </div>
+                    <p>🎨 Creative Arts</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/yoga.JPG" alt="Art & Craft"
+                            onerror="this.src='https://placehold.co/400x250?text=🎨+Art+Corner'">
+                        <div class="photo-hint">📁 kids_activity4.jpg</div>
+                    </div>
+                    <p>YOGA </p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/chess.JPG" alt="Art & Craft"
+                            onerror="this.src='https://placehold.co/400x250?text=🎨+Art+Corner'">
+                        <div class="photo-hint">📁 kids_activity4.jpg</div>
+                    </div>
+                    <p>CHESS </p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/damce.JPG" alt="Art & Craft"
+                            onerror="this.src='https://placehold.co/400x250?text=🎨+Art+Corner'">
+                        <div class="photo-hint">📁 kids_activity4.jpg</div>
+                    </div>
+                    <p> DANCE</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/groupworld.JPG" alt="Art & Craft"
+                            onerror="this.src='https://placehold.co/400x250?text=🎨+Art+Corner'">
+                        <div class="photo-hint">📁 kids_activity4.jpg</div>
+                    </div>
+                    <p>WORLDS GROUP PIC</p>
+                </div>
+
+            </div>
+            <div class="photo-note" style="display:block; text-align:center;"><i class="fas fa-upload"></i> 4 slots →
+                Replace kids_activity1.jpg .. kids_activity4.jpg in /media/</div>
+        </div>
+
+        <!-- GRAND CELEBRATIONS 2 columns wide -->
+        <div class="container" data-aos="fade-up" style="margin-top: 40px;">
+            <div class="section-title">Grand <span>Celebrations 2026</span></div>
+            <div class="photo-gallery-2col">
+                <div class="gallery-card">
+                    <div class="gallery-img" style="height:260px;"><img src="media/banner-stage-view.JPG"
+                            alt="Stage Decoration"
+                            onerror="this.src='https://placehold.co/600x380?text=🎭+Stage+Decor+2026'">
+                        <div class="photo-hint">grand_stage.jpg</div>
+                    </div>
+                    <p>✨ Grand Stage Setup</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img" style="height:260px;"><img src="media/audiance.JPG"
+                            alt="Audience & Parents"
+                            onerror="this.src='https://placehold.co/600x380?text=👨‍👩‍👧‍👦+Audience+2026'">
+                        <div class="photo-hint">audience_moments.jpg</div>
+                    </div>
+                    <p>❤️ Cheers & Celebrations</p>
+                </div>
+            </div>
+            <div class="photo-note"><i class="fas fa-camera"></i> 📸 Two wide photo areas: grand_stage.jpg ,
+                audience_moments.jpg (update with 2026 highlights)</div>
+        </div>
+
+        <!-- ========== NEW SECTION 1: LIGHTING THE LAMP CEREMONY (2 separate photo slots) ========== -->
+        <div class="container" data-aos="fade-up" style="margin-top: 40px;">
+            <div class="section-title">Lighting the <span>Lamp Ceremony 2026</span></div>
+            <div class="photo-gallery-2col">
+                <div class="gallery-card">
+                    <div class="gallery-img" style="height:260px;"><img src="media/lighting.JPG" alt="Lamp Lighting 1"
+                            onerror="this.src='https://placehold.co/600x380?text=🪔+Traditional+Lamp+Lighting+2026'">
+                        <div class="photo-hint">lamp_lighting1.jpg</div>
+                    </div>
+                    <p>🪔 Auspicious Beginning</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img" style="height:260px;"><img src="media/ligting2.JPG" alt="Lamp Lighting 2"
+                            onerror="this.src='https://placehold.co/600x380?text=✨+Blessings+&+Prayers'">
+                        <div class="photo-hint">lamp_lighting2.jpg</div>
+                    </div>
+                    <p>✨ Blessings & Prayers</p>
+                </div>
+            </div>
+            <div class="photo-note"><i class="fas fa-camera-retro"></i> 🕯️ 2 dedicated slots: lamp_lighting1.jpg ,
+                lamp_lighting2.jpg (add 2026 lamp lighting moments)</div>
+        </div>
+
+        <!-- ========== NEW SECTION 2: CHIEF GUEST FELICITATION (2 separate photo spaces for two chief guests) ========== -->
+        <div class="container" data-aos="fade-up" style="margin-top: 40px;">
+            <div class="section-title">Chief Guest <span>Felicitation 2026</span></div>
+            <div class="photo-gallery-2col">
+                <div class="gallery-card">
+                    <div class="gallery-img" style="height:260px;"><img src="media/felicitation2.JPG"
+                            alt="Chief Guest Felicitation Dr. E. Akshaya"
+                            onerror="this.src='https://placehold.co/600x380?text=🏅+Dr.+E.+AKSHAYA+Felicitation'">
+                        <div class="photo-hint">chief_felicitate1.jpg</div>
+                    </div>
+                    <p>🏅 Honouring Dr. E. Akshaya</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img" style="height:260px;"><img src="media/felicitation1.JPG"
+                            alt="Chief Guest Felicitation Mrs. Punitha Ganesan"
+                            onerror="this.src='https://placehold.co/600x380?text=🌟+Mrs.+Punitha+Ganesan+Honour'">
+                        <div class="photo-hint">chief_felicitate2.jpg</div>
+                    </div>
+                    <p>🌟 Felicitating Mrs. Punitha Ganesan</p>
+                </div>
+            </div>
+            <div class="photo-note"><i class="fas fa-award"></i> 🎖️ Two separate chief guest felicitation images:
+                chief_felicitate1.jpg , chief_felicitate2.jpg</div>
+        </div>
+
+        <!-- DIGNITARIES SECTION with image hints -->
+        <div class="container guest-section" data-aos="zoom-in">
+            <div class="section-title">Esteemed <span>Dignitaries 2026</span></div>
+            <div class="guest-flex">
+                <div class="guest-card">
+                    <div class="guest-img-placeholder"><img src="media/akshayamam.png" alt="Dr.E.Akshaya"
+                            onerror="this.src='https://placehold.co/200x200?text=Chief+Guest+2026'">
+                        <div class="photo-hint"
+                            style="position: absolute; bottom: 6px; left: 6px; background: rgba(0,0,0,0.55);">
+                            chief_guest.jpg</div>
+                    </div>
+                    <h3>Dr. E. AKSHAYA</h3>
+                    <p>MBBS, MD | Director & Consultant Radiologist |Director of KAMATCHI hospital Thanjavur</p>
+                    <p><i class="fas fa-microphone-alt"></i> Chief Guest</p>
+                </div>
+                <div class="guest-card">
+                    <div class="guest-img-placeholder"><img src="media/punithamam.png" alt="Mrs. Punitha Ganesan"
+                            onerror="this.src='https://placehold.co/200x200?text=Mrs.+Punitha+2026'">
+                        <div class="photo-hint" style="position: absolute; bottom: 6px; left: 6px;">punitha_ganesan.jpg
+                        </div>
+                    </div>
+                    <h3>Mrs. PUNITHA GANESAN</h3>
+                    <p>Managing Director & Secretary, Bharath Group</p>
+                    <p><i class="fas fa-star"></i> Guest of Honour</p>
+                </div>
+            </div>
+            <div class="photo-note" style="margin-top: 20px;">⭐ Photo hint: media/chief_guest.jpg &
+                media/punitha_ganesan.jpg</div>
+        </div>
+
+        <!-- AWARDS & RECOGNITIONS (3 extra spots) -->
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">Awards & <span>Recognitions 2026</span></div>
+            <div class="photo-gallery-3col">
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/award1.png" alt="Award Ceremony"
+                            onerror="this.src='https://placehold.co/500x280?text=🏆+Award+Winners+2026'">
+                        <div class="photo-hint">award1.jpg</div>
+                    </div>
+                    <p>🏅 Best Student Awards</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/award2.png" alt="Teacher Felicitation"
+                            onerror="this.src='https://placehold.co/500x280?text=🍎+Teacher+Honours+2026'">
+                        <div class="photo-hint">award2.jpg</div>
+                    </div>
+                    <p>📚 student Award</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/teacherflr.JPG" alt="Teacher Appreciation Award"
+                            onerror="this.src='https://placehold.co/500x280?text=👪+Parent+Volunteers'">
+                        <div class="photo-hint">award3.jpg</div>
+                    </div>
+                    <p>💐 Teacher Appreciation Award</p>
+                </div>
+            </div>
+            <div class="photo-note">🏆 3 photo slots: award1.jpg , award2.jpg , award3.jpg inside /media/ (update with
+                2026 ceremony)</div>
+        </div>
+
+        <!-- CANDID MOMENTS: 4 extra + hints -->
+        <div class="container" data-aos="fade-up" style="margin-top: 50px; margin-bottom: 20px;">
+            <div class="section-title">Candid <span>Moments 2026</span> & Backstage</div>
+            <div class="photo-gallery-4col">
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/damce.JPG" alt="Candid1"
+                            onerror="this.src='https://placehold.co/400x240?text=😊+Smiling+Faces+2026'">
+                        <div class="photo-hint">candid1.jpg</div>
+                    </div>
+                    <p>Joyful smiles</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/party.JPG" alt="Candid2"
+                            onerror="this.src='https://placehold.co/400x240?text=🎈+Party+Corner'">
+                        <div class="photo-hint">candid2.jpg</div>
+                    </div>
+                    <p>Food Festival</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/group.JPG" alt="Candid3"
+                            onerror="this.src='https://placehold.co/400x240?text=🤝+Group+Photos'">
+                        <div class="photo-hint">candid3.jpg</div>
+                    </div>
+                    <p>Group pictures</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/world.JPG" alt="Candid4"
+                            onerror="this.src='https://placehold.co/400x240?text=📷+Selfie+Time'">
+                        <div class="photo-hint">candid4.jpg</div>
+                    </div>
+                    <p>World Record</p>
+                </div>
+            </div>
+            <div class="photo-note"><i class="fas fa-images"></i> 4 candid spots: candid1.jpg to candid4.jpg — replace
+                with 2026 memories!</div>
+        </div>
+
+        <!-- EXTRA BONUS GALLERY: 2026 Sneak Peek / Rehearsals (extra 3 photos) -->
+        <div class="container" data-aos="fade-up" style="margin-top: 20px;">
+            <div class="section-title">Behind the Scenes <span>2026</span></div>
+            <div class="photo-gallery-3col">
+
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/kalkin.JPG" alt="Rehearsal"
+                            onerror="this.src='https://placehold.co/500x280?text=🎬+Rehearsal+Moments'">
+                        <div class="photo-hint">rehearsal1.jpg</div>
+                    </div>
+                    <p>🎤 Rehearsal Magic</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/mirali.JPG" alt="Rehearsal"
+                            onerror="this.src='https://placehold.co/500x280?text=🎬+Rehearsal+Moments'">
+                        <div class="photo-hint">rehearsal1.jpg</div>
+                    </div>
+                    <p>🎤 Rehearsal Magic</p>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp.JPG" alt="Decoration"
+                            onerror="this.src='https://placehold.co/500x280?text=🎈+Decoration+Setup'">
+                        <div class="photo-hint">decoration_setup.jpg</div>
+                    </div>
+                    <p>🎈MOM KID RAMP WALK</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp2.JPG" alt="Decoration"
+                            onerror="this.src='https://placehold.co/500x280?text=🎈+Decoration+Setup'">
+                        <div class="photo-hint">decoration_setup.jpg</div>
+                    </div>
+                    <p>🎈MOM KID RAMP WALK</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp3.JPG" alt="Decoration"
+                            onerror="this.src='https://placehold.co/500x280?text=🎈+Decoration+Setup'">
+                        <div class="photo-hint">decoration_setup.jpg</div>
+                    </div>
+                    <p>🎈MOM KID RAMP WALK</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp4.JPG" alt="Decoration"
+                            onerror="this.src='https://placehold.co/500x280?text=🎈+Decoration+Setup'">
+                        <div class="photo-hint">decoration_setup.jpg</div>
+                    </div>
+                    <p>🎈MOM KID RAMP WALK</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp5.JPG" alt="Decoration"
+                            onerror="this.src='https://placehold.co/500x280?text=🎈+Decoration+Setup'">
+                        <div class="photo-hint">decoration_setup.jpg</div>
+                    </div>
+                    <p>🎈MOM KID RAMP WALK</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp6.JPG" alt="Decoration"
+                            onerror="this.src='https://placehold.co/500x280?text=🎈+Decoration+Setup'">
+                        <div class="photo-hint">decoration_setup.jpg</div>
+                    </div>
+                    <p>🎈MOM KID RAMP WALK</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp7.JPG" alt="Decoration"
+                            onerror="this.src='https://placehold.co/500x280?text=🎈+Decoration+Setup'">
+                        <div class="photo-hint">decoration_setup.jpg</div>
+                    </div>
+                    <p>🎈MOM KID RAMP WALK</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp10.JPG" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp9.JPG" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp11.JPG" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp12.JPG" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp8.JPG" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp13.JPG" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/ramp1.png" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img"><img src="media/rampgrp.JPG" alt="Backstage"
+                            onerror="this.src='https://placehold.co/500x280?text=✨+Backstage+Fun'">
+                        <div class="photo-hint">backstage_fun.jpg</div>
+                    </div>
+                    <p>✨ Backstage Laughter</p>
+                </div>☻
+            </div>
+            <div class="photo-note"><i class="fas fa-video"></i> New 3 slots: rehearsal1.jpg, decoration_setup.jpg,
+                backstage_fun.jpg — perfect for 2026 prep!</div>
+        </div>
+
+        <!-- Franchise & extra about maths -->
+        <div class="container franchise-strip" data-aos="fade-up">
+            <div class="franchise-inner">
+                <div class="miracle">
+                    <h3><i class="fas fa-brain"></i> MIRACLE OF MATHS</h3>
+                    <p>Franchise of IDEAL PLAY ABACUS INDIA PVT. LTD | ARKA KIDS INTERNATIONAL SCHOOL<br> INTERNATIONAL
+                        MONTESSORI TEACHER TRAINING INSTITUTE</p>
+                </div>
+                <div style="background: rgba(255,235,210,0.2); padding: 12px 28px; border-radius: 100px;"><span
+                        style="font-weight:bold;"><i class="fas fa-globe"></i> BAL BHARATH 2026</span></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="media/mom.png" alt="mom logo" height="55"
+                    onerror="this.src='https://placehold.co/140x55?text=MOM+Academy'">
+                <p style="margin-top: 18px;">Nurturing Young Minds with a play-based curriculum for strong foundation.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4><i class="fas fa-heart"></i> MOM DAYCARE</h4>
+                <ul style="list-style: none;">
+                    <li><i class="fas fa-angle-right"></i> After School Care</li>
+                    <li><i class="fas fa-angle-right"></i> Activity Hub</li>
+                    <li><i class="fas fa-angle-right"></i> Parent Connect</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4><i class="fas fa-life-ring"></i> HELP & QUICK LINK</h4>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Enrollment</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONNECT</h4>
+                <div class="social-icons"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i
+                        class="fab fa-telegram"></i></div>
+                <p style="margin-top: 20px;"><i class="fas fa-envelope"></i> hello@momacademy.edu</p>
+                <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>© 2026 MOM ACADEMY (Miracle of Maths) | 5th Annual Day 2026 Celebration — Bigger & Brighter</p>
+            <p>IDEAL PLAY ABACUS | ARKA KIDS INTERNATIONAL | MONTESSORI TRAINING INSTITUTE</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 700, offset: 60, once: true });
+        console.log("🎉 Mom Academy Annual Day 2026 — Over 18+ photo zones ready! Add your images in /media/ folder: DSC_7846.JPG, kids_activity1.jpg, award1.jpg, candid1.jpg, rehearsal1.jpg, etc.");
+    </script>
+    <div class="floating-hint">
+        <i class="fas fa-camera-retro"></i> 18+ photo areas • 2026 edition • Replace images in /media/
+    </div>
+</body>
+
+</html>
